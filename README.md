@@ -1,6 +1,6 @@
-# Vegetable Store
+# shoplite
 
-A front-end website for a vegetable store. (Work in progress)
+A front-end website for a shoplite. (Work in progress)
 
 ## Technologies
 
@@ -12,8 +12,8 @@ A front-end website for a vegetable store. (Work in progress)
 ## How to run
 
 ```bash
-git clone https://github.com/ali113113/vegetable-store.git
-cd vegetable-store
+git clone https://github.com/ali113113/shoplite.git
+cd shoplite
 npm install
 npm run dev:css
 ```
