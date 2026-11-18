@@ -3,11 +3,15 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<link rel="stylesheet" href="node_modules/@fontsource-variable/outfit/index.css" />    <link rel="stylesheet" href="src/css/output.css" />
+    <link
+      rel="stylesheet"
+      href="node_modules/@fontsource-variable/outfit/index.css"
+    />
+    <link rel="stylesheet" href="src/css/output.css" />
     <title>ShopLite</title>
   </head>
-<body class="bg-white font-body text-[21px] font-extralight text-ink">   
-   <div>
+  <body class="bg-lime-400 font-body text-[21px] font-extralight text-ink">
+    <div>
       <!-- SVG sprite definitions extracted from the original ZIP -->
       <svg xmlns="http://www.w3.org/2000/svg" style="display: none">
         <symbol
@@ -242,13 +246,12 @@
             d="M14 10.5a.5.5 0 0 0-.5-.5h-3a.5.5 0 0 0 0 1h3a.5.5 0 0 0 .5-.5zm0-3a.5.5 0 0 0-.5-.5h-7a.5.5 0 0 0 0 1h7a.5.5 0 0 0 .5-.5zm0-3a.5.5 0 0 0-.5-.5h-11a.5.5 0 0 0 0 1h11a.5.5 0 0 0 .5-.5z"
           />
         </symbol>
-      </svg>
-
+     
       <!-- Other icon examples kept in the file but commented out for later use:
       <svg class="wishlist"><use xlink:href="#heart"></use></svg>
       <svg class="cart"><use xlink:href="#cart"></use></svg>
       <svg class="chevron-forward-circle d-flex justify-content-center align-items-center border rounded-3 p-2" width="55" height="55"><use xlink:href="#alt-arrow-right-outline"></use></svg>
-      <svg class="chevron-back-circle d-flex justify-content-center align-items-center border rounded-3 p-2" width="55" height="55"><use xlink:href="#alt-arrow-left-outline"></use></svg>
+      <svg class="chevron-back-circle d-flex justify-content-center align-items-center border rounded-3 p-2" width="55" height="55"><use xlink:href="#alt-arrow-left-outline"></use></svg>s gap-
       <svg class="cart-outline"><use xlink:href="#cart-outline" /></svg>
       <svg class="quality"><use xlink:href="#quality" /></svg>
       <svg class="price-tag"><use xlink:href="#price-tag" /></svg>
@@ -261,79 +264,10 @@
       <svg class="youtube"><use xlink:href="#youtube" /></svg>
       -->
     </div>
-    <header class="flex flex-wrap justify-between items-center px-[clamp(2rem,10vw,12.5rem)] py-8 text-[20px] font-extralight bg-soft">
-      <div class="headerlogo text-center">
-        <a href="index.html"
-          ><img src="public/assets/icons/main-logo.png" alt=""
-        /></a>
-      </div>
-      <nav class="">
-        <ul class="gap-5 w-full flex justify-evenly items-center">
-          <li><a class="font-body p-3 text-primary" href="">HOME</a></li>
-          <li><a class="font-body p-3" href="">ABOUT</a></li>
-          <li><a class="font-body p-3" href="">SHOP</a></li>
-          <li><a class="font-body p-3" href="">BLOGS</a></li>
-          <li><a class="font-body p-3" href="">CONTACT</a></li>
-        </ul>
-      </nav>
-      <div class="headerIcons">
-        <ul class="w-full flex gap-5 justify-evenly items-center w-full">
-          <li>
-            <svg class="search h-8 w-8">
-              <use xlink:href="#search"></use>
-            </svg>
-          </li>
-          <li>
-            <svg class="user h-8 w-8">
-              <use xlink:href="#user"></use>
-            </svg>
-          </li>
-          <li>
-            <svg class="wishlist h-8 w-8">
-              <use xlink:href="#heart"></use>
-            </svg>
-          </li>
-          <li>
-            <svg class="cart h-8 w-8 flex">
-              <use xlink:href="#cart" class="inline-block"></use>
-            </svg>
-          </li>
-        </ul>
-      </div>
-    </header>
+    <site-header></site-header>
 
-    <section class="hero w-full">
-      <!-- swiper s -->
-      <div class="swipCard w-full">
-        <div></div>
-        <div></div>
-      </div>
-    </section>
-
-    <section class="w-full flex justify-evenly items-center">
-      <div>
-        <p>test</p>
-        <p>test</p>
-        <p>test</p>
-      </div>
-      <div>
-        <p>test</p>
-        <p>test</p>
-        <p>test</p>
-      </div>
-      <div>
-        <p>test</p>
-        <p>test</p>
-        <p>test</p>
-      </div>
-      <div>
-        <p>test</p>
-        <p>test</p>
-        <p>test</p>
-      </div>
-    </section>
-
-    <script src="node_modules/jquery/dist/jquery.min.js"></script>
+    <script  src="node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="src/js/components/header.js"></script>
     <script src="src/js/main.js"></script>
   </body>
 </html>
