@@ -4,13 +4,17 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css"
+/>
+    <link
       rel="stylesheet"
       href="node_modules/@fontsource-variable/outfit/index.css"
     />
     <link rel="stylesheet" href="src/css/output.css" />
     <title>ShopLite</title>
   </head>
-  <body class="bg-lime-400 font-body text-[21px] font-extralight text-ink">
+  <body class="font-body text-[21px] font-extralight text-ink">
     <div>
       <!-- SVG sprite definitions extracted from the original ZIP -->
       <svg xmlns="http://www.w3.org/2000/svg" style="display: none">
@@ -265,7 +269,127 @@
       -->
     </div>
     <site-header></site-header>
+<section class="bg-[url('/public/assets/images/banners/banner-image-bg.jpg')] bg-cover bg-center bg-no-repeat w-full h-[660px]">
 
+    <div class="swiper h-full w-full">
+
+        <div class="swiper-wrapper ">
+
+            <div class="swiper-slide">
+<div class="w-full h-full flex ">
+
+                 <div class="w-1/2 flex flex-col items-center justify-center ">
+              <div>
+
+                <h2 class="text-6xl my-2">GOPRO</h2>
+                <h2 class="text-6xl my-2">HERO9 BLACK</h2>
+                <p class="text-2xl my-2">Limited stocks available. grab it now!</p>
+                <button class="px-14 py-4 my-2 bg-primary rounded-full text-soft">SHOP PRODUCT</button>
+          
+              </div>
+                </div>
+                  <div class="w-1/2 h-full flex items-center justify-center">
+                    <img
+                        class="object-contain"
+                        src="/public/assets/images/products/banner-image.png"
+                        alt="Product"
+                    >
+                </div>
+</div>
+               
+
+              
+
+            </div>
+        </div>
+        
+       <div class="">
+          <button type="button" id="heroNext" class="z-10 absolute right-0 top-1/2 -translate-y-1/2 p-3 border border-line rounded-lg disabled:opacity-30 disabled:cursor-not-allowed disabled:border-line disabled:text-line">
+
+      <svg class="search h-8 w-8">
+        <use xlink:href="#alt-arrow-right-outline"></use>
+      </svg>
+
+    </button>
+  </div>
+      <div class="">
+          <button type="button" id="heroPrev" class="z-10 absolute left-0 top-1/2 -translate-y-1/2 p-3 border border-line rounded-lg disabled:opacity-30 disabled:cursor-not-allowed disabled:border-line disabled:text-line">
+
+      <svg class="search h-8 w-8">
+        <use xlink:href="#alt-arrow-left-outline"></use>
+      </svg>
+
+    </button>
+  </div>
+    </div>
+
+</section>
+
+
+  <section class="p-20 flex justify-evenly items-start w-full">
+    <div class="flex justify-center items-start  w-[20%] ">
+      <div class="pt-1 mx-3">
+         <svg class=" h-8 w-8 ">
+             <use xlink:href="#cart-outline" class="fill-primary"></use>
+           </svg>
+          </div>
+      <div>
+        <h3 class="text-2xl">
+
+          Free delivery
+
+        </h3>
+        <p>Consectetur adipi elit lorem ipsum dolor sit amet.</p></div>
+    </div>
+     <div class="flex justify-center items-start w-[20%] ">
+      <div class="pt-1 mx-3">
+         <svg class=" h-8 w-8 ">
+             <use xlink:href="#quality" class="fill-primary"></use>
+           </svg>
+      </div>
+      <div>
+         <h3 class="text-2xl">
+
+Free Quality guarantee
+        </h3>
+        <p>
+Dolor sit amet orem ipsu mcons ectetur adipi elit.        </p>
+        </div>
+    </div>
+    <div class="flex justify-center items-start  w-[20%]">
+      <div class="pt-1 mx-3">
+         <svg class=" h-8 w-8 ">
+             <use xlink:href="#price-tag" class="fill-primary"></use>
+           </svg>
+      </div>
+      <div>
+     <h3 class="text-2xl">
+
+Free Daily offers
+        </h3>
+        <p>Amet consectetur adipi elit loreme ipsum dolor sit.</p></div>
+    </div>
+      <div class="flex justify-center items-start  w-[20%]">
+      <div class="pt-1 mx-3">
+         <svg class=" h-8 w-8 ">
+             <use xlink:href="#shield-plus" class="fill-primary"></use>
+           </svg>
+      </div>
+      <div>
+    <h3 class="text-2xl">
+
+100% secure payment        </h3>
+        <p>Rem Lopsum dolor sit amet, consectetur adipi elit.</p></div>
+    </div>
+  </section>
+
+
+
+
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
     <script  src="node_modules/jquery/dist/jquery.min.js"></script>
     <script src="src/js/components/header.js"></script>
     <script src="src/js/main.js"></script>

@@ -42,7 +42,7 @@ class SiteHeader extends HTMLElement {
           </button>
           <!--//////////////  wishlits modol  /////////////-->
           
-<div id="wishlitsTab" class="absolute top-full right-0 mt-3 w-96 border border-line rounded-lg bg-soft p-4 hidden flex-col justify-center items-center gap-3">     
+<div id="wishlitsTab" class="z-50 absolute top-full right-0 mt-3 w-96 border border-line rounded-lg bg-soft p-4 hidden flex-col justify-center items-center gap-3">     
  <div class="w-full flex justify-between items-center">
         <p class="uppercas text-primary text-2xl">YOUR WISHLIST</p>
         <span class="px-3 text-[1.1rem] py-0.5 rounded-2xl font-bold bg-primary text-soft">2</span>
@@ -92,7 +92,7 @@ class SiteHeader extends HTMLElement {
           </button>
           <!-- /////////////  cart modol  /////////////  -->
 
-<div id ="cartTab"  class="absolute top-full right-0 mt-3 w-96 border border-line rounded-lg bg-soft p-4 hidden flex-col justify-center items-center gap-3">     
+<div id ="cartTab"  class="z-50 absolute top-full right-0 mt-3 w-96 border border-line rounded-lg bg-soft p-4 hidden flex-col justify-center items-center gap-3">     
  <div class="w-full flex justify-between items-center">
         <p class="uppercas text-primary text-2xl">YOUR CART</p>
         <span class="px-3 text-[1.1rem] py-0.5 rounded-2xl font-bold bg-primary text-soft">2</span>
