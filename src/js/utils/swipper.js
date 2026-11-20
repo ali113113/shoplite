@@ -42,3 +42,35 @@ const swiperBestSellingItems = new Swiper(".swiperBestSellingItems", {
     },
   },
 });
+
+const customersReviews = new Swiper(".customersReviews", {
+  slidesPerView: 1,
+  spaceBetween: 15,
+  speed: 700,
+  navigation: {
+    nextEl: "#customersReviewsNext",
+    prevEl: "#customersReviewsPrev",
+  },
+
+  breakpoints: {
+    640: {
+      slidesPerView: 1,
+      spaceBetween: 20,
+    },
+
+    768: {
+      slidesPerView: 2,
+      spaceBetween: 25,
+    },
+
+    1024: {
+      slidesPerView: 2,
+      spaceBetween: 30,
+    },
+
+    1280: {
+      slidesPerView: 3,
+      spaceBetween: 30,
+    },
+  },
+});

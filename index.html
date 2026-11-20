@@ -265,7 +265,7 @@
     <section
       class="bg-[url('/public/assets/images/banners/banner-image-bg.jpg')] bg-cover bg-center bg-no-repeat w-full h-[660px]"
     >
-      <div class="swiperHero h-full w-full">
+      <div class="swiperHero h-full w-full overflow-hidden">
         <div class="swiper-wrapper">
           <div class="swiper-slide">
             <div class="w-full h-full flex">
@@ -371,12 +371,23 @@
 
     <site-services></site-services>
 
-    <section class="px-48 py-10 flex flex-col justify-center gap-10">
+    <section
+      class="px-4 sm:px-8 lg:px-16 xl:px-48 py-28 flex flex-col justify-center gap-10"
+    >
       <div class="flex gap-5 overflow-hidden items-center">
         <h2 class="text-ink font-extralight text-3xl">CATEGORIES</h2>
-        <p class="text-line">
-          ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-        </p>
+
+        <div
+          class="flex-1 h-4 min-w-0"
+          style="
+            background: repeating-linear-gradient(
+              110deg,
+              transparent 0 5px,
+              #999 5px 7px,
+              transparent 7px 12px
+            );
+          "
+        ></div>
       </div>
       <div class="flex justify-around items-center gap-6">
         <div
@@ -446,9 +457,17 @@
     >
       <div class="flex gap-5 overflow-hidden items-center">
         <h2 class="text-ink font-extralight text-3xl">BEST SELLING ITEMS</h2>
-        <p class="text-line">
-          ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-        </p>
+        <div
+          class="flex-1 h-4 min-w-0"
+          style="
+            background: repeating-linear-gradient(
+              110deg,
+              transparent 0 5px,
+              #999 5px 7px,
+              transparent 7px 12px
+            );
+          "
+        ></div>
       </div>
       <div class="overflow-hidden">
         <div
@@ -555,11 +574,394 @@
         </div>
       </div>
     </section>
-    
+
+    <section class="px-4 sm:px-8 lg:px-16 xl:px-48 py-28 flex-wrap">
+      <div class="max-w[1140px] flex justify-between items-center h-full">
+        <div class="w1/2">
+          <img
+            class="w-full h-full object-cover"
+            src="public/assets/images/products/banner-image3.png"
+            alt=""
+          />
+        </div>
+        <div
+          class="w-1/2 flex flex-col justify-center items-start h-full gap-15"
+        >
+          <p class="uppercase text-[3rem] text-ink">
+            30% discount on apple collection
+          </p>
+          <div class="w-full flex justify-evenly items-center">
+            <div>
+              <p class="text-5xl font-normal text-ink">27</p>
+              <p class="font-normal text-ink">Days</p>
+            </div>
+            <div class="text-primary text-5xl">:</div>
+            <div>
+              <p class="text-5xl font-normal text-ink">23</p>
+              <p class="font-normal text-ink">Hrs</p>
+            </div>
+            <div class="text-primary text-5xl">:</div>
+
+            <div>
+              <p class="text-5xl font-normal text-ink">31</p>
+              <p class="font-normal text-ink">Min</p>
+            </div>
+            <div class="text-primary text-5xl">:</div>
+
+            <div>
+              <p class="text-5xl font-normal text-ink">9</p>
+              <p class="font-normal text-ink">Sec</p>
+            </div>
+          </div>
+          <button
+            class="bg-primary text-on-primary uppercase py-5 px-18 rounded-full"
+          >
+            shop collection
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <section
+      class="py-28 px-4 sm:px-8 lg:px-16 xl:px-48 flex justify-evenly items-center gap-5"
+    >
+      <div
+        class="w-1/4 flex flex-col justify-evenly items-start border border-line rounded-lg p-5"
+      >
+        <h4 class="uppercase w-full overflow-hidden pb-8">Featured</h4>
+        <div class="w-full">
+          <div
+            class="flex-1 h-4 min-w-0"
+            style="
+              background: repeating-linear-gradient(
+                110deg,
+                transparent 0 5px,
+                #999 5px 7px,
+                transparent 7px 12px
+              );
+            "
+          ></div>
+        </div>
+        <div class="flex flex-col justify-center items-center"></div>
+        <div class="flex justify-start gap-5 border-b border-line py-8">
+          <div class="w-1/2">
+            <img
+              class="w-full h-full rounded-md"
+              src="./public/assets/images/products/insta-item2.jpg"
+              alt=""
+            />
+          </div>
+          <div class="flex flex-col justify-between items-start">
+            <p>
+              <a
+                href=""
+                class="font-light"
+                >Wireless headset</a
+              >
+            </p>
+            <p class="text-primary">$500</p>
+          </div>
+        </div>
+        <div class="flex justify-start gap-5 border-b border-line py-8">
+          <div class="w-1/2">
+            <img
+              class="w-full h-full rounded-md"
+              src="./public/assets/images/products/insta-item2.jpg"
+              alt=""
+            />
+          </div>
+          <div class="flex flex-col justify-between items-start">
+            <p>
+              <a
+                href=""
+                class="font-light"
+                >Wireless headset</a
+              >
+            </p>
+            <p class="text-primary">$500</p>
+          </div>
+        </div>
+        <div class="flex justify-start gap-5 pt-8">
+          <div class="w-1/2">
+            <img
+              class="w-full h-full rounded-md"
+              src="./public/assets/images/products/insta-item2.jpg"
+              alt=""
+            />
+          </div>
+          <div class="flex flex-col justify-between items-start">
+            <p>
+              <a
+                href=""
+                class="font-light"
+                >Wireless headset</a
+              >
+            </p>
+            <p class="text-primary">$500</p>
+          </div>
+        </div>
+      </div>
+      <div
+        class="w-1/4 flex flex-col justify-evenly items-start border border-line rounded-lg p-5"
+      >
+        <h4 class="uppercase w-full overflow-hidden pb-8">Featured</h4>
+        <div class="w-full">
+          <div
+            class="flex-1 h-4 min-w-0"
+            style="
+              background: repeating-linear-gradient(
+                110deg,
+                transparent 0 5px,
+                #999 5px 7px,
+                transparent 7px 12px
+              );
+            "
+          ></div>
+        </div>
+        <div class="flex flex-col justify-center items-center"></div>
+        <div class="flex justify-start gap-5 border-b border-line py-8">
+          <div class="w-1/2">
+            <img
+              class="w-full h-full rounded-md"
+              src="./public/assets/images/products/insta-item2.jpg"
+              alt=""
+            />
+          </div>
+          <div class="flex flex-col justify-between items-start">
+            <p>
+              <a
+                href=""
+                class="font-light"
+                >Wireless headset</a
+              >
+            </p>
+            <p class="text-primary">$500</p>
+          </div>
+        </div>
+        <div class="flex justify-start gap-5 border-b border-line py-8">
+          <div class="w-1/2">
+            <img
+              class="w-full h-full rounded-md"
+              src="./public/assets/images/products/insta-item2.jpg"
+              alt=""
+            />
+          </div>
+          <div class="flex flex-col justify-between items-start">
+            <p>
+              <a
+                href=""
+                class="font-light"
+                >Wireless headset</a
+              >
+            </p>
+            <p class="text-primary">$500</p>
+          </div>
+        </div>
+        <div class="flex justify-start gap-5 pt-8">
+          <div class="w-1/2">
+            <img
+              class="w-full h-full rounded-md"
+              src="./public/assets/images/products/insta-item2.jpg"
+              alt=""
+            />
+          </div>
+          <div class="flex flex-col justify-between items-start">
+            <p>
+              <a
+                href=""
+                class="font-light"
+                >Wireless headset</a
+              >
+            </p>
+            <p class="text-primary">$500</p>
+          </div>
+        </div>
+      </div>
+      <div
+        class="w-1/4 flex flex-col justify-evenly items-start border border-line rounded-lg p-5"
+      >
+        <h4 class="uppercase w-full overflow-hidden pb-8">Featured</h4>
+        <div class="w-full">
+          <div
+            class="flex-1 h-4 min-w-0"
+            style="
+              background: repeating-linear-gradient(
+                110deg,
+                transparent 0 5px,
+                #999 5px 7px,
+                transparent 7px 12px
+              );
+            "
+          ></div>
+        </div>
+        <div class="flex flex-col justify-center items-center"></div>
+        <div class="flex justify-start gap-5 border-b border-line py-8">
+          <div class="w-1/2">
+            <img
+              class="w-full h-full rounded-md"
+              src="./public/assets/images/products/insta-item2.jpg"
+              alt=""
+            />
+          </div>
+          <div class="flex flex-col justify-between items-start">
+            <p>
+              <a
+                href=""
+                class="font-light"
+                >Wireless headset</a
+              >
+            </p>
+            <p class="text-primary">$500</p>
+          </div>
+        </div>
+        <div class="flex justify-start gap-5 border-b border-line py-8">
+          <div class="w-1/2">
+            <img
+              class="w-full h-full rounded-md"
+              src="./public/assets/images/products/insta-item2.jpg"
+              alt=""
+            />
+          </div>
+          <div class="flex flex-col justify-between items-start">
+            <p>
+              <a
+                href=""
+                class="font-light"
+                >Wireless headset</a
+              >
+            </p>
+            <p class="text-primary">$500</p>
+          </div>
+        </div>
+        <div class="flex justify-start gap-5 pt-8">
+          <div class="w-1/2">
+            <img
+              class="w-full h-full rounded-md"
+              src="./public/assets/images/products/insta-item2.jpg"
+              alt=""
+            />
+          </div>
+          <div class="flex flex-col justify-between items-start">
+            <p>
+              <a
+                href=""
+                class="font-light"
+                >Wireless headset</a
+              >
+            </p>
+            <p class="text-primary">$500</p>
+          </div>
+        </div>
+      </div>
+      <div
+        class="w-1/4 flex flex-col justify-evenly items-start border border-line rounded-lg p-5"
+      >
+        <h4 class="uppercase w-full overflow-hidden pb-8">Featured</h4>
+        <div class="w-full">
+          <div
+            class="flex-1 h-4 min-w-0"
+            style="
+              background: repeating-linear-gradient(
+                110deg,
+                transparent 0 5px,
+                #999 5px 7px,
+                transparent 7px 12px
+              );
+            "
+          ></div>
+        </div>
+        <div class="flex flex-col justify-center items-center"></div>
+        <div class="flex justify-start gap-5 border-b border-line py-8">
+          <div class="w-1/2">
+            <img
+              class="w-full h-full rounded-md"
+              src="./public/assets/images/products/insta-item2.jpg"
+              alt=""
+            />
+          </div>
+          <div class="flex flex-col justify-between items-start">
+            <p>
+              <a
+                href=""
+                class="font-light"
+                >Wireless headset</a
+              >
+            </p>
+            <p class="text-primary">$500</p>
+          </div>
+        </div>
+        <div class="flex justify-start gap-5 border-b border-line py-8">
+          <div class="w-1/2">
+            <img
+              class="w-full h-full rounded-md"
+              src="./public/assets/images/products/insta-item2.jpg"
+              alt=""
+            />
+          </div>
+          <div class="flex flex-col justify-between items-start">
+            <p>
+              <a
+                href=""
+                class="font-light"
+                >Wireless headset</a
+              >
+            </p>
+            <p class="text-primary">$500</p>
+          </div>
+        </div>
+        <div class="flex justify-start gap-5 pt-8">
+          <div class="w-1/2">
+            <img
+              class="w-full h-full rounded-md"
+              src="./public/assets/images/products/insta-item2.jpg"
+              alt=""
+            />
+          </div>
+          <div class="flex flex-col justify-between items-start">
+            <p>
+              <a
+                href=""
+                class="font-light"
+                >Wireless headset</a
+              >
+            </p>
+            <p class="text-primary">$500</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+     <site-footer></site-footer>
+     
+     <section
+      class="px-48 py-10 flex flex-col justify-center gap-10 overflow-hidden"
+    >
+      <div class="flex gap-5 overflow-hidden items-center">
+        <h2 class="text-ink font-extralight text-3xl uppercase">
+          Latest posts
+        </h2>
+        <div
+          class="flex-1 h-4 min-w-0"
+          style="
+            background: repeating-linear-gradient(
+              110deg,
+              transparent 0 5px,
+              #999 5px 7px,
+              transparent 7px 12px
+            );
+          "
+        >
+      </div>
+      </div>
+      <div class="w-full flex justify-between items-center gap-5">
+        <div></div>
+      </div>
+    </section>
     <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
     <script src="node_modules/jquery/dist/jquery.min.js"></script>
-    <script src="src/js/components/companyServices.js"></script>
     <script src="src/js/components/header.js"></script>
+    <script src="src/js/components/companyServices.js"></script>
+    <script src="src/js/components/footer.js"></script>
     <script src="src/js/utils/swipper.js"></script>
     <script src="src/js/main.js"></script>
   </body>

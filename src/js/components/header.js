@@ -247,12 +247,12 @@ class SiteHeader extends HTMLElement {
     const loginTab = this.querySelector("#loginTab");
     const signUpForm = this.querySelector("#signUpForm");
     const loginForm = this.querySelector("#loginForm");
-    const wishlitsTab = this.querySelector("#wishlitsTab")
-    const wishlistBtn = this.querySelector("#wishlistBtn")
-    const cartBtn = this.querySelector("#cartBtn")
-    const cartTab = this.querySelector("#cartTab")
-    const searchBtnIcone = this.querySelector("#searchBtnIcone")
-    const searchTab = this.querySelector("#searchTab")
+    const wishlitsTab = this.querySelector("#wishlitsTab");
+    const wishlistBtn = this.querySelector("#wishlistBtn");
+    const cartBtn = this.querySelector("#cartBtn");
+    const cartTab = this.querySelector("#cartTab");
+    const searchBtnIcone = this.querySelector("#searchBtnIcone");
+    const searchTab = this.querySelector("#searchTab");
     // open/close user modol func  ................................
     function openModol(modol) {
       modol.classList.add("flex");
@@ -263,61 +263,63 @@ class SiteHeader extends HTMLElement {
       modol.classList.add("hidden");
     }
 
-
-    //  ------------------------ wishlist modol 
-    wishlistBtn.addEventListener("click",(e)=>{
+    //  ------------------------ wishlist modol
+    wishlistBtn.addEventListener("click", (e) => {
       openModol(wishlitsTab);
     });
-      document.addEventListener("keydown", (e) => {
+    document.addEventListener("keydown", (e) => {
       if (e.key === "Escape") {
         closeModol(wishlitsTab);
       }
     });
-       document.addEventListener("click", (e) => {
-  if (!wishlitsTab.contains(e.target) && !wishlistBtn.contains(e.target)) {
-    closeModol(wishlitsTab);
-  }
-});
+    document.addEventListener("click", (e) => {
+      if (!wishlitsTab.contains(e.target) && !wishlistBtn.contains(e.target)) {
+        closeModol(wishlitsTab);
+      }
+    });
 
-
-//  ----------------  cart modol
-    cartBtn.addEventListener("click",(e)=>{
+    //  ----------------  cart modol
+    cartBtn.addEventListener("click", (e) => {
       openModol(cartTab);
     });
-      document.addEventListener("keydown", (e) => {
+    document.addEventListener("keydown", (e) => {
       if (e.key === "Escape") {
         closeModol(cartTab);
       }
     });
-     document.addEventListener("click", (e) => {
-  if (!cartTab.contains(e.target) && !cartBtn.contains(e.target)) {
-    closeModol(cartTab);
-  }
-});
+    document.addEventListener("click", (e) => {
+      if (!cartTab.contains(e.target) && !cartBtn.contains(e.target)) {
+        closeModol(cartTab);
+      }
+    });
 
-
-
-// ---------------------user modol
+    // ---------------------user modol
     userBtn.addEventListener("click", () => {
       openModol(userModal);
       active(signUpForm, signUpTab);
     });
     closeBtn.addEventListener("click", () => {
       closeModol(userModal);
+      deactive(loginForm, loginTab);
+      deactive(signUpForm, signUpTab);
     });
     document.addEventListener("keydown", (e) => {
       if (e.key === "Escape") {
         closeModol(userModal);
+        deactive(loginForm, loginTab);
+        deactive(signUpForm, signUpTab);
       }
     });
     userModal.addEventListener("click", (e) => {
       if (userModal === e.target) {
         closeModol(userModal);
+        deactive(loginForm, loginTab);
+        deactive(signUpForm, signUpTab);
       }
     });
 
-// ------------------- search modol
-    searchBtnIcone.addEventListener("click",()=>{
+    // ------------------- search modol
+    searchBtnIcone.addEventListener("click", () => {
       openModol(searchTab);
     });
 
@@ -343,7 +345,7 @@ class SiteHeader extends HTMLElement {
       tab.classList.add("hidden");
       btn.classList.remove("underline", "text-primary");
     }
-// -------------------------  sgin / log activesion
+    // -------------------------  sgin / log activesion
     signUpTab.addEventListener("click", () => {
       active(signUpForm, signUpTab);
       deactive(loginForm, loginTab);
