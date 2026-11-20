@@ -45,7 +45,7 @@ class SiteHeader extends HTMLElement {
 <div id="wishlitsTab" class="z-50 absolute top-full right-0 mt-3 w-96 border border-line rounded-lg bg-soft p-4 hidden flex-col justify-center items-center gap-3">     
  <div class="w-full flex justify-between items-center">
         <p class="uppercas text-primary text-2xl">YOUR WISHLIST</p>
-        <span class="px-3 text-[1.1rem] py-0.5 rounded-2xl font-bold bg-primary text-soft">2</span>
+        <span class="px-3 text-[1.1rem] py-0.5 rounded-2xl font-bold bg-primary text-on-primary">2</span>
       </div>
       <div class=" border border-line rounded-lg flex flex-col w-full">
         <div class="border-b px-3 py-2 border-line flex justify-between">
@@ -78,8 +78,8 @@ class SiteHeader extends HTMLElement {
 
       </div>
       <div class="w-full flex flex-col justify-evenly items-center gap-1">
-                  <button class="text-line bg-black w-full rounded-full py-4 text-[1.3rem] font-extralight">ADD ALL TO CART</button>
-                  <button class="text-line bg-primary w-full rounded-full py-4 text-[1.3rem] font-extralight">VIEW CART</button>
+                  <button class="text-surface bg-ink w-full rounded-full py-4 text-[1.3rem] font-extralight">ADD ALL TO CART</button>
+                  <button class="text-on-primary bg-primary w-full rounded-full py-4 text-[1.3rem] font-extralight">VIEW CART</button>
                 </div>
     </div>
     
@@ -95,7 +95,7 @@ class SiteHeader extends HTMLElement {
 <div id ="cartTab"  class="z-50 absolute top-full right-0 mt-3 w-96 border border-line rounded-lg bg-soft p-4 hidden flex-col justify-center items-center gap-3">     
  <div class="w-full flex justify-between items-center">
         <p class="uppercas text-primary text-2xl">YOUR CART</p>
-        <span class="px-3 text-[1.1rem] py-0.5 rounded-2xl font-bold bg-primary text-soft">2</span>
+        <span class="px-3 text-[1.1rem] py-0.5 rounded-2xl font-bold bg-primary text-on-primary">2</span>
       </div>
       <div class=" border border-line rounded-lg flex flex-col w-full">
         <div class="border-b px-3 py-2 border-line flex justify-between">
@@ -128,8 +128,8 @@ class SiteHeader extends HTMLElement {
 
       </div>
       <div class="w-full flex flex-col justify-evenly items-center gap-1">
-                  <button class="text-line w-full  bg-primary rounded-full py-4 text-[1.3rem] font-extralight">ADD ALL TO CART</button>
-                  <button class="text-line  bg-black w-full rounded-full py-4 text-[1.3rem] font-extralight">GO TO CHECKOUT</button>
+                  <button class="text-on-primary w-full  bg-primary rounded-full py-4 text-[1.3rem] font-extralight">ADD ALL TO CART</button>
+                  <button class="text-surface bg-ink w-full rounded-full py-4 text-[1.3rem] font-extralight">GO TO CHECKOUT</button>
                 </div>
     </div>
           </li>
@@ -138,7 +138,7 @@ class SiteHeader extends HTMLElement {
     </header>
     <!--/////////////////  search modol ////////////////////-->
 
-    <div id="searchTab" class=" fixed inset-0 z-50  w-full h-screen hidden flex-col items-center justify-center gap-7 bg-white">
+    <div id="searchTab" class=" fixed inset-0 z-50  w-full h-screen hidden flex-col items-center justify-center gap-7 bg-surface">
 
   <div class="w-2/3 bg-soft rounded-full p-4 relative flex justify-center items-center">
 
@@ -189,7 +189,7 @@ class SiteHeader extends HTMLElement {
    <!-- // ////////////////// modol log ///////////////-->
 
 <div id="userModal" class="fixed inset-0 z-50 hidden items-center justify-center bg-black/50"> 
-   <div class="sign w-5/12 h-auto mx-auto bg-white px-3 py-7 border border-line rounded-xl flex flex-col justify-center gap-5">
+   <div class="sign w-5/12 h-auto mx-auto bg-surface px-3 py-7 border border-line rounded-xl flex flex-col justify-center gap-5">
           <div class="exix w-full flex justify-end">
 <button type="button" id="closeBtn" aria-label="Close">      
         <svg class="w-6 h-6"><use href="#close"></use></svg>
@@ -222,7 +222,7 @@ class SiteHeader extends HTMLElement {
           <label for="remember">Remember me later</label>
         </div>
         
-        <input type="submit" value="SIGN UP" class="bg-black w-full rounded-full text-white p-3">
+        <input type="submit" value="SIGN UP" class="bg-ink w-full rounded-full text-surface p-3">
       </form>
        <form id="loginForm" action="#" class="hidden w-full flex-col gap-5">
         <div class="flex flex-col justify-center items-start w-full gap-3">
@@ -235,7 +235,7 @@ class SiteHeader extends HTMLElement {
         </div>
         
         <a href="#" class="underline font-light color-line">Forgot my password</a>
-        <input type="submit" value="LOG IN" class="bg-black w-full rounded-full text-white p-3">
+        <input type="submit" value="LOG IN" class="bg-ink w-full rounded-full text-surface p-3">
       </form>
     </div>
 </div>

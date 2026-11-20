@@ -3,10 +3,12 @@
 /* @plugin "daisyui"; */
 @theme {
   --font-heading: "Outfit Variable", sans-serif;
---font-body: "Outfit Variable", sans-serif;
+  --font-body: "Outfit Variable", sans-serif;
   --color-primary: #ff6543;
   --color-ink: #272727;
   --color-muted: #717171;
   --color-soft: #f3f3f3;
   --color-line: #e3e3e3;
+  --color-surface: #ffffff;
+  --color-on-primary: #ffffff;
 }
