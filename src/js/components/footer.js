@@ -1,6 +1,7 @@
 class Footer extends HTMLElement {
   connectedCallback() {
-    this.innerHTML = `<section
+    this.innerHTML = `
+    <section
       class="px-48 py-10 flex flex-col justify-center gap-10 overflow-hidden"
     >
       <div class="flex gap-5 overflow-hidden items-center">
@@ -444,35 +445,35 @@ class Footer extends HTMLElement {
             <li>
               <a
                 class="uppercase text-ink text-[1rem] hover:text-primary transition duration-300 ease-in-out"
-                href=""
+                href="index.html"
                 >home</a
               >
             </li>
             <li>
               <a
                 class="uppercase text-ink text-[1rem] hover:text-primary transition duration-300 ease-in-out"
-                href=""
+                href="about.html"
                 >about</a
               >
             </li>
             <li>
               <a
                 class="uppercase text-ink text-[1rem] hover:text-primary transition duration-300 ease-in-out"
-                href=""
+                href="shop.html"
                 >shop</a
               >
             </li>
             <li>
               <a
                 class="uppercase text-ink text-[1rem] hover:text-primary transition duration-300 ease-in-out"
-                href=""
+                href="blogs.html"
                 >blogs</a
               >
             </li>
             <li>
               <a
                 class="uppercase text-ink text-[1rem] hover:text-primary transition duration-300 ease-in-out"
-                href=""
+                href="contact.html"
                 >contact</a
               >
             </li>

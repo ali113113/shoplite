@@ -9,18 +9,17 @@ class SiteHeader extends HTMLElement {
       </div>
       <nav class="">
         <ul class="gap-5 w-full flex justify-evenly items-center">
-          <li><a class="font-body p-3 text-primary" href="">HOME</a></li>
-          <li><a class="font-body p-3" href="">ABOUT</a></li>
-          <li><a class="font-body p-3" href="">SHOP</a></li>
-          <li><a class="font-body p-3" href="">BLOGS</a></li>
-          <li><a class="font-body p-3" href="">CONTACT</a></li>
+          <li><a class="font-body p-3  hover:text-primary transition duration-300 ease-in-out" href="index.html">HOME</a></li>
+          <li><a class="font-body p-3  hover:text-primary transition duration-300 ease-in-out" href="about.html">ABOUT</a></li>
+          <li><a class="font-body p-3  hover:text-primary transition duration-300 ease-in-out" href="shop.html">SHOP</a></li>
+          <li><a class="font-body p-3  hover:text-primary transition duration-300 ease-in-out" href="blogs.html">BLOGS</a></li>
+          <li><a class="font-body p-3  hover:text-primary transition duration-300 ease-in-out" href="cantact.html">CONTACT</a></li>
         </ul>
       </nav>
       <div class="headerIcons">
         <ul class="flex gap-5 justify-evenly items-center w-full">
           <li>
            <button type="button" id="searchBtnIcone">
-       
            <svg class="search h-8 w-8">
              <use xlink:href="#search"></use>
            </svg>
